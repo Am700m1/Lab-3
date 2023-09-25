@@ -3,8 +3,7 @@ public class Sorter{
         System.out.println("hi");
     }
 
-    public static int[] insertionSort(int arr[])
-    {
+    public static int[] insertionSort(int arr[]){
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
             int key = arr[i];
@@ -20,7 +19,7 @@ public class Sorter{
             arr[j + 1] = key;
         }
         return arr;
-}
+    }
     
     public static int[] selectionSort(int[] arr){
         int n = arr.length;
@@ -37,5 +36,9 @@ public class Sorter{
             arr[i] = temp;
         }
         return arr;
+    }
+
+    public static int[] sorter(int[] arr){
+        return insertionSort(arr);
     }
 }
